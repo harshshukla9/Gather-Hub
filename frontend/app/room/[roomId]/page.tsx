@@ -14,7 +14,7 @@ export default function RoomPage() {
   useEffect(() => {
     if (!roomId) return
 
-    const ws = new WebSocket("ws://localhost:8080")
+    const ws = new WebSocket("https://controlled-zilvia-harshharshukla9792-f9494df1.koyeb.app/")
 
     ws.onopen = () => {
       console.log(`Connected to WebSocket, joining room ${roomId}`)
